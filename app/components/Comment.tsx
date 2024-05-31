@@ -41,7 +41,7 @@ export default function Comment({ postId, openPostId }: CommentProps) {
     return (
       <>
         {Array.from({ length: comments?.length as number }).map((_, idx) => {
-          return <CommentSkeleton />;
+          return <CommentSkeleton key={idx} />;
         })}
       </>
     );
