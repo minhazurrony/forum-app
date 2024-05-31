@@ -27,7 +27,7 @@ export default function Home() {
       );
       const jsonResponse = await response.json();
       setPosts(jsonResponse);
-      // setIsLoadingPost(false);
+      setIsLoadingPost(false);
     } catch (error) {
       console.error(error);
       setIsLoadingPost(false);
